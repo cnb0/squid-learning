@@ -1,0 +1,26 @@
+# get the basic status of Squid
+squid -k check | echo $?
+
+# check the squid configuration for errors
+squid -k parse
+
+# test connectivity to the chosen site
+squidclient -h <squidendpoint> -p3128 http://<testurl>
+
+# get list of recent attempts to reach forbidden sites
+grep -nR '/403' /var/log/squid/access.log
+
+# get real-time list of sites forbidden by Squid
+tail -f /var/log/squid/access.log | grep '/403'
+
+# get useful information about the proxy process and tail logs
+systemctl status squid
+
+# if you change the squid config and want to run it on the existing server
+systemctl reload squid
+
+# restart the proxy
+systemctl restart squid
+
+# get the feed of Squid logs
+journalctl -u squid
