@@ -1,3 +1,24 @@
+
+
+# Check Your Configuration File for Errors
+Before trying to start Squid, you should verify that your squid.conf file makes sense. This is easy to do. Just run the following command:
+
+% squid -k parse
+If you see no output, the configuration file is valid, and you can proceed to the next step.
+
+However, if your configuration file contains an error, Squid tells you about it:
+
+squid.conf line 62: http_access allow okay2
+
+aclParseAccessLine: ACL name 'okay2' not found.
+squid check config syntax
+Here you can see that the http_access directive on line 62 references an ACL that doesn't exist. Sometimes the error messages are less informative:
+
+FATAL: Bungled squid.conf line 76: memory_pools
+In this case, we forgot to put either on or off after the memory_pools directive on line 76.
+It's a good idea to develop the habit of using squid -k parse every time you modify your configuration file. If you don't bother, and your file has some errors, Squid tells you about them and refuses to start anyway
+
+
 # get the basic status of Squid
 squid -k check | echo $?
 
@@ -24,3 +45,4 @@ systemctl restart squid
 
 # get the feed of Squid logs
 journalctl -u squid
+
