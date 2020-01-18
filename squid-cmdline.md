@@ -1,5 +1,6 @@
-``` Squid Command-Line Options
-Before getting too far into other things, let's look at Squid's command-line options. 
+```
+Squid Command-Line Options
+
 Many of these you will never use and some are useful only when debugging problems:
 
 
