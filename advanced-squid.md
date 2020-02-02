@@ -1,3 +1,4 @@
+``` 
 Squid has one primary configuration file, squid.conf. This file is generally located in /etc/squid/, 
 or if you compiled Squid from source, the default location is /usr/local/squid/etc/. 
 You’ll be editing this file, so it’s wise to make a backup copy of it before you make any changes.
