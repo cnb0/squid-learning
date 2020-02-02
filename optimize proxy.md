@@ -1,4 +1,4 @@
-So the```  So the goal was to build two proxy node to have distributed workload, the two proxy exchange their cache informations using the ICP protocol (Internet Cache Protocol), this is an UDP based protocol that use UDP port 3130 to exchange data availability between the two or more proxy.
+```So the So the goal was to build two proxy node to have distributed workload, the two proxy exchange their cache informations using the ICP protocol (Internet Cache Protocol), this is an UDP based protocol that use UDP port 3130 to exchange data availability between the two or more proxy.
 
 The same Squid proxy configuration is deployed on two host, except for the ip address which are inverted.
 
