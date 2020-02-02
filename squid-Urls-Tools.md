@@ -9,6 +9,7 @@
 - https://nfsec.co.uk/haproxy-with-transparency/
 - https://wiki.squid-cache.org/Features/Tproxy4
 - https://techexpert.tips/squid/squid-transparent-proxy-on-ubuntu-linux/
+- https://www.reddit.com/r/sysadmin/comments/a67hly/squid_proxy_a_short_guide_forward_transparent/
 
 
 ### Transparent squid proxy 
