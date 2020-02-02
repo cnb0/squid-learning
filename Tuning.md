@@ -1,6 +1,8 @@
  
 ``` 
-Tuning Squid will speed things up a little bit. So without further ado lets first take a look a the directives for the squid.conf:
+Tuning Squid will speed things up a little bit. 
+
+directives 
 
 pipeline_prefetch on
 shutdown_lifetime 1 second
