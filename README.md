@@ -3,8 +3,11 @@
 1. Understanding proxy methodology.
 2. Installing squid
                   Compiling from source 
-                     using apt-get package management
-                      Squid Fundamentals          
+                           https://wiki.squid-cache.org/SquidFaq/CompilingSquid
+                           https://mindchasers.com/dev/squid
+                           https://chasewright.com/2017/02/09/install-squid-from-source-on-ubuntu-16-04/
+                  Using apt-get package management
+                  Squid Fundamentals          
 
 3. Transparent squid proxy 
 
