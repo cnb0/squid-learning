@@ -10,6 +10,7 @@ that user that will click on any shiny animated object in front of them.
 
 This script works similarly to SafeSquid, but gives you full 
 control of the list and allows for increased flexability.
+https://www.safesquid.com/content-filtering/overview
 
 Getting Started
 
