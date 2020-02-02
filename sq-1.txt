@@ -1,4 +1,5 @@
-``` Tutorial :https://www.tekyhost.com/squid-proxy-squid-caching-and-filtering-proxy/
+``` 
+Tutorial :https://www.tekyhost.com/squid-proxy-squid-caching-and-filtering-proxy/
 https://www.visolve.com/squid/whitepapers/reverseproxy.html
 https://www.tecmint.com/configure-squid-server-in-linux/
 http://linux-training.be/servers/ch02.html
