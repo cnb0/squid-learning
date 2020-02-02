@@ -21,6 +21,7 @@
 - https://darizotas.blogspot.com/2013/02/squid-hardening-cheat-sheet.html
 
 ### Transparent squid proxy 
+ - https://medium.com/snapt/haproxy-and-tproxy-99bcf6ce16cf
  - https://wiki.dd-wrt.com/wiki/index.php/Squid_Transparent_Proxy
  - https://www.agix.com.au/minimal-squid-as-a-transparent-proxy/
  - https://dev.to/suntong/a-short-guide-on-squid-transparent-proxy-ssl-bumping-k5c
