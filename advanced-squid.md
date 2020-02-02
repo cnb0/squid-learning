@@ -176,7 +176,8 @@ you could end up allowing (or denying) all access. To use proxy authentication,
 you must define at least one authentication helper before any proxy_auth ACLs. 
 If you don’t, Squid will print an error message to the logs and start up anyway, 
 and all user requests may be denied. If you try to set up proxy authentication and 
-find that it’s not working, look at the logs to make sure that the problem does not lie in the order of the ACLs.
+find that it’s not working, look at the logs to make sure that the problem does 
+not lie in the order of the ACLs.
 
 HTTP Basic authentication supports the following auth_param parameters:
 
@@ -226,14 +227,23 @@ acl Students proxy_auth REQUIRED
 
 http_access allow Students
 
-For this example I have used the NCSA authentication helper, which is a simple authentication method that stores usernames and passwords in a single text file, similar to the /etc/passwd file. You pass the path to the password file as the program’s single command-line argument in Squid.conf:
+For this example I have used the NCSA authentication helper, 
+which is a simple authentication method that stores usernames and
+passwords in a single text file, similar to the /etc/passwd file.
+You pass the path to the password file as the program’s single command-line argument in Squid.conf:
 
 auth_param basic program /usr/local/squid/libexec/ncsa_auth /usr/local/squid/etc/passwd
 
-To create and update the file, you can use the htpasswd program. If you have the Apache Web server installed, htpasswd should also be installed; if not, download it from the Squid Web site. To create a file, the command is htpasswd -c passwdfile user.
+To create and update the file, you can use the htpasswd program. 
+If you have the Apache Web server installed, htpasswd should also be installed;
+if not, download it from the Squid Web site. To create a file, the command is htpasswd -c passwdfile user.
 
 To add users and change their passwords, the command is htpasswd passwdfile username.
 
-htpasswd will prompt you for a password. If you want to allow users to change their own passwords, you can use the chpasswd CGI script, which is also available on the Squid Web site.
+htpasswd will prompt you for a password. If you want to allow
+users to change their own passwords, you can use the chpasswd CGI script,
+which is also available on the Squid Web site.
 
-There are several other authentication helpers you can use with Basic authentication. For example, you can authenticate against a LDAP server, Windows Domain, or Samba domain.
+There are several other authentication helpers you can use with 
+Basic authentication. For example, you can authenticate against a LDAP server,
+Windows Domain, or Samba domain.
