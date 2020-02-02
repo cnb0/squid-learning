@@ -1,3 +1,4 @@
+```
 cache_effective_user and cache_effective_group: even though the user and group are default to nobody. 
 It is highly recommended to execute Squid under a dedicated (sandbox) user, with no shell privileges.
 
@@ -122,7 +123,8 @@ Disable it completely.
 acl all src 0.0.0.0/0.0.0.0
 cache deny all
 
-ICP and HTCP ports are used to communicate with other caches in a hierarchy. In most cases we don’t need these ports open, specifically if we've disabled the cache.
+ICP and HTCP ports are used to communicate with other caches in a hierarchy.
+In most cases we don’t need these ports open, specifically if we've disabled the cache.
 icp_port 0
 icp_access deny all
 htcp_port 0
