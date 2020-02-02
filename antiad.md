@@ -12,15 +12,15 @@ This script works similarly to SafeSquid, but gives you full
 control of the list and allows for increased flexability.
 https://www.safesquid.com/content-filtering/overview
 
+https://pgl.yoyo.org/
+
 Getting Started
 
 The following three(3) lines need to be added anywhere in your squid.conf file. 
 We are going to assume your squid.conf file is in /etc/squid/ and you will be 
 putting your list of ad servers called ad_block.txt in the same directory.
 
-NOTE: If you need assistance with Squid check out the Calomel.org Squid proxy "how to". 
-You can also setup a proxy auto configuration (PAC) file in the browser using 
-our Proxy Auto Config for Firefox (PAC) "how to".
+ 
 The first line below is a comment and reminder where you are getting your list from. 
 The second line is the regular expression that reads the "/etc/squid/ad_block.txt" file 
 when the squid daemon loads or when you reconfigure the daemon with "squid -k reconfigure". 
@@ -34,17 +34,21 @@ any ifo about your proxy or why the error was triggered.
 acl ads dstdom_regex "/etc/squid/ad_block.txt"
 http_access deny ads
 #deny_info TCP_RESET ads
+
 Fetching the list of ad servers
 The next step is to fetch the list of known advertising hostnames and
 save them to a file so squid can read it. 
+
 The following script uses curl to download the list from pgl.yoyo.org and 
 save the list to a file in /etc/squid/ad_block.txt. 
+
 The last line in the script tells squid to re-read the ad_block.txt list after the 
 file is downloaded to load in any new ad servers.
 
-#### Calomel.org  ad_servers_newlist.sh 
-#
+#### ad_servers_newlist.sh 
+
 ## get new ad server list
+
 curl -sS -L --compressed
 "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=0&mimetype=plaintext" > 
 /etc/squid/ad_block.txt 
