@@ -1,15 +1,19 @@
 ``` 
 SARG (Squid Analysis Report Generator).
-It is an Open-Source tool, which helps us analyze Squid Proxy logs & generates reports in HTML format with all the information from logs presented in nice & easy to understand format.
+It is an Open-Source tool, which helps us analyze Squid Proxy logs & generates reports
+in HTML format with all the information from logs presented in nice & easy to understand format.
 
-& It gives information about User’s IP addresses , total & individually used bandwidth etc with access to Daily, Weekly & Monthly reports.
+& It gives information about User’s IP addresses , total & individually 
+used bandwidth etc with access to Daily, Weekly & Monthly reports.
 
 ( Also read : Setting up SQUID AUTHENTICATION )
 
  
 
 Installation
-The process for installing sarg on Centos/Redhat is a bit complicated, as it needs to be compiled from source. To do that, firstly we need to install required packages to download & compile the package
+The process for installing sarg on Centos/Redhat is a bit complicated, as it needs 
+to be compiled from source. To do that, firstly we need to install required packages 
+to download & compile the package
 
 yum install -y gcc gd gd-devel make perl-GD wget httpd
 
@@ -26,11 +30,14 @@ make
 make install
 
 Configuration
-Now that’s the installation is complete, we will configure it as per our needs by making changes in configuration file
+Now that’s the installation is complete, we will configure it as per our needs 
+by making changes in configuration file
 
 vi /usr/local/etc/sarg.conf
 
-Firstly, uncomment the line starting with access_log & add path for squid access log. Next, provide output directory for reports next to line starting with output_dir & also select your desired time format, change  line with date_format
+Firstly, uncomment the line starting with access_log & add path for squid access log. 
+Next, provide output directory for reports next to line starting with output_dir & 
+also select your desired time format, change  line with date_format
 
 # TAG: access_log file
 # Where is the access.log file
@@ -72,7 +79,8 @@ http://IP-Address of server/squid
 
 Now, we have all the squid analyzed logs in nice, sorted &easy to understand format
 
-Note : you can also create a cron–job to schedule a report being generated automatically at the time of your choosing.
+Note : you can also create a cron–job to schedule a report being generated 
+automatically at the time of your choosing.
 
 For Example
 
