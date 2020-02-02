@@ -16,9 +16,9 @@
 - http://www.squid-cache.org/Doc/config/
 - http://www.mpipks-dresden.mpg.de/~mueller/docs/suse10.2/html/opensuse-manual_en/manual/sec.squid.cachemgr.html
 
-#Squid Tuning
-http://www.christianschenk.org/blog/tuning-and-hardening-squid/
-
+### Squid Tuning
+- http://www.christianschenk.org/blog/tuning-and-hardening-squid/
+- https://darizotas.blogspot.com/2013/02/squid-hardening-cheat-sheet.html
 
 ### Transparent squid proxy 
  - https://wiki.dd-wrt.com/wiki/index.php/Squid_Transparent_Proxy
