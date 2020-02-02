@@ -10,6 +10,14 @@
 - https://wiki.squid-cache.org/Features/Tproxy4
 - https://techexpert.tips/squid/squid-transparent-proxy-on-ubuntu-linux/
 - https://www.reddit.com/r/sysadmin/comments/a67hly/squid_proxy_a_short_guide_forward_transparent/
+- https://www.sans.org/reading_room/whitepapers/policyissues/security-considerations-squid-proxy-server_1048
+- http://it-audit.sans.org/community/papers/auditing-squid-web-proxy-server_166
+- http://www.deckle.co.uk/squid-users-guide/squid-access-control-and-access-control-operators.html
+- http://www.squid-cache.org/Doc/config/
+- http://www.mpipks-dresden.mpg.de/~mueller/docs/suse10.2/html/opensuse-manual_en/manual/sec.squid.cachemgr.html
+
+#Squid Tuning
+http://www.christianschenk.org/blog/tuning-and-hardening-squid/
 
 
 ### Transparent squid proxy 
