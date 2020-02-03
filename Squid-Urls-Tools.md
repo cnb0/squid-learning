@@ -28,6 +28,8 @@
  - https://wiki.alpinelinux.org/wiki/Setting_up_Transparent_Squid_Proxy
  - http://roberts.bplaced.net/index.php/linux-guides/centos-6-guides/proxy-server/squid-transparent-proxy-http-https
  - https://www.agix.com.au/minimal-transparent-squid-proxy-with-ssl-interception-bumping-on-centos-7/
+ - https://www.howtoforge.com/filtering-https-traffic-with-squid
+ - http://blog.scphillips.com/posts/2017/04/intercept-https/
 
 ### HTTP Redirection and Rewriting
  - https://www.metahackers.pro/spoof-http-header-using-squid-proxy/https://wiki.squid-cache.org/Features/Redirectors
