@@ -51,6 +51,8 @@ C++ API (Traffic Spicer ): http://spicer.measurement-factory.com/
 PYTHON API :http://icap-server.sourceforge.net/
 ```
 
+
+
 Squid Conf :
 --------------
 ``` 
@@ -64,3 +66,58 @@ icap_service service_resp respmod_precache 0 icap://127.0.0.1:1344/response
 icap_class class_resp service_resp
 icap_access class_resp allow all
 ```
+
+
+
+
+
+### C API 
+https://wiki.squid-cache.org/ConfigExamples/ContentAdaptation/C-ICAP
+
+- Ubuntu 19:04 :
+                 - https://zoomadmin.com/HowToInstall/UbuntuPackage/c-icap
+                 - http://manpages.ubuntu.com/manpages/disco/man8/c-icap.8.html
+- CVE Details  : https://www.cvedetails.com/vendor/15032/C-icap-Project.html
+
+github(server and modules )
+- https://github.com/c-icap/c-icap-server
+- https://github.com/c-icap/c-icap-modules
+
+Implements basic services for the c-icap server. Currently the following
+services are implemented:
+  - virus_scan, an antivirus ICAP service
+  - url_check, an URL blacklist/whitelist icap service
+  - srv_content_filtering, a score based content filtering icap service
+
+c-icap is an implementation of an ICAP server. It can be used with HTTP proxies that support the ICAP protocol to implement content adaptation and filtering services.
+
+Most of the commercial HTTP proxies must support the ICAP protocol. The open source Squid 3.x proxy server supports it.
+
+Instructions : https://sourceforge.net/p/c-icap/wiki/faqcicap/
+
+Major features:
+
+- basic C API for developing custom content adaptation and filtering services
+- plugins interface
+- LDAP integration
+- simple ICAP client API
+
+Currently the following services have been implemented for the c-icap server:
+- Web antivirus service, using the clamav open-source antivirus engine
+- basic URL filtering service
+
+#### c-icap Install : https://sourceforge.net/p/c-icap/wiki/c-icapInstall/
+config : https://sourceforge.net/p/c-icap/wiki/configuration/
+
+```
+acl infoaccess dstdomain icap.info
+
+icap_service service_info reqmod_precache 1 icap://192.168.1.2:1344/info
+adaptation_service_set class_info service_info
+adaptation_access class_info allow infoaccess
+adaptation_access class_info deny all
+```
+To view c-icap statistics use the http://icap.info url in your browser
+
+Examples :
+https://serverfault.com/questions/482552/how-to-enable-url-filtering-with-just-squid-c-icap
