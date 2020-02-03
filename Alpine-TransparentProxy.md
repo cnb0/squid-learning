@@ -1,3 +1,4 @@
+``` 
 Setting up Transparent Squid Proxy 
 This document covers how to set up squid as a transparent proxy server.
 
