@@ -1,7 +1,7 @@
 ```
 Squid Transparent proxy server : How to configure
  
- we have learned to install & configure squid proxy server. We will now, 
+ 
  we learn to configure Squid transparent proxy server. 
  With setting up Squid transparent proxy server, we have a 
  major advantage of not configuring proxy setting on every user’s machine. 
@@ -14,13 +14,10 @@ It redirects all the internet traffic from port 80 to squid proxy’s port i.e. 
 So now let’s start with the setting squid as transparent proxy…
 
  
-
 Installation
-
 
 $ sudo yum install squid -y
 
- 
 
 Configuring squid
 
