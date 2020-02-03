@@ -1,5 +1,26 @@
 ### Squid has built-in ICAP (Internet Content Adaptation Protocol)  support.
 
+https://wiki.squid-cache.org/SquidFaq/ContentAdaptation#eCAP
+
+Content Adaptation
+A proxy may analyze, capture, block, replace, or modify the messages it proxies. Such actions are often called content adaptation even though some of them do not alter anything.
+
+Squid can be configured or modified to perform some forms of content adaptation. This page highlights content adaptation approaches supported by Squid.
+Use cases
+The following are typical content adaptation needs. Virtually all of the adaptations listed below have been implemented using one or more mechanisms described in this document.
+
+Add, remove, or modify an HTTP header field (e.g., Cookie)
+Block messages based on request URLs
+Block messages based on content
+Redirect certain requests to a custom page or server
+Respond to certain requests with a custom page
+Modify a page to insert new content (e.g., warnings or ads)
+Modify a page to remove existing content (e.g., images or ads)
+Scale an embedded image (e.g., for mobile devices)
+
+
+ICAP is a poorly documented and inconsistently implemented protocol.
+
 ICAP Server: no
 
 ICAP Client: yes
@@ -47,8 +68,18 @@ Depending on configuration and context, some ICAP failures can be bypassed, maki
 Scripting :
 ``` 
 C API : http://c-icap.sourceforge.net/
-C++ API (Traffic Spicer ): http://spicer.measurement-factory.com/
+C++ API (Traffic Spicer - paid ): http://spicer.measurement-factory.com/
+      With direct access to ICAP experts, Factory clients benefit from years of Spicer compatibility work as well as Spicer APIs that isolate client-specific adaptation logic from ICAP idiosyncrasies.
+
 PYTHON API :http://icap-server.sourceforge.net/
+Java : http://www.poesia-filter.org/
+WebFlowAdapter ICAP server - http://www.l3ws.com/
+                             HTTP anonymization,
+                             Advertisement Insertion,
+                             Tracking,
+                             Access Control,
+                             Web Application firewall,
+
 ```
 
 
