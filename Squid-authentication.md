@@ -1,4 +1,4 @@
-```
+
 Squid is a proxy web server that uses caching to optimizes website operation
 so that the web pages load more quickly, thereby improving the response time for 
 the pages that are accessed by users most frequently. Using Squid as a proxy server,
