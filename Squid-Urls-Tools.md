@@ -3,6 +3,9 @@
 - squidGuard package for who wish to have more fine-grained control over what web resources may be viewed by clients.
 - Webmin
 
+### squid compile from sources 
+- https://mindchasers.com/dev/squid
+
 ### Blogs
 - https://techexpert.tips/squid/install-squid-with-https-ssl-decryption-ubuntu-linux/
 - http://gsoc-blog.ecklm.com/iptables-redirect-vs.-dnat-vs.-tproxy/
@@ -37,6 +40,7 @@
  - https://mindchasers.com/dev/app-squid-redirect
  - https://github.com/rchunping/squid-urlrewrite
  - https://github.com/rchunping/https-proxy
+ - https://mindchasers.com/dev/app-squid-redirect#mc-app-squid-redirect-references
 
 
 
