@@ -41,6 +41,7 @@
  - https://github.com/rchunping/squid-urlrewrite
  - https://github.com/rchunping/https-proxy
  - https://mindchasers.com/dev/app-squid-redirect#mc-app-squid-redirect-references
+ - http://www.linofee.org/~jel/webtools/jesred/
 
 
 
