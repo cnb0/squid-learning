@@ -1,8 +1,9 @@
-```
-Setup Squid proxy as a transparent server.
+ 
+### Setup Squid proxy as a transparent server.
 
 Main benefit of setting transparent proxy is you do not have to setup up 
 individual browsers to work with proxies.
+http://proxy.ccu.edu.tw/squidfaq/FAQ-20.html
 
 My Setup:
 i) System: HP dual Xeon CPU system with 8 GB RAM (good for squid).
