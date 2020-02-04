@@ -1,3 +1,5 @@
+### Howto: Squid proxy authentication using ncsa_auth helper
+https://www.cyberciti.biz/tips/linux-unix-squid-proxy-server-authentication.html
 
 Squid is a proxy web server that uses caching to optimizes website operation
 so that the web pages load more quickly, thereby improving the response time for 
@@ -22,14 +24,12 @@ Pre-requisites for Squid Authentication
 We need to have both squid & http packages installed on our system.
 
 $ sudo yum install httpd
-
 $ sudo yum install squid
 
 To detailed squid installation, refer to the articles mentioned above.
 
-
-
 Configuration
+
 We are going to use a module called ‘ncsa_auth’ for squid authentication. 
 It’s located at ‘/usr/lib/squid/ncsa_auth’ for 32 bit systems & 
 for 64 bit system, it’s located at ‘/usr/lib64/squid’ directory.
@@ -56,18 +56,17 @@ http_access allow auth_users
 
 http_access deny all
 
-Now save the file & exit but make sure that all these acl should be entered above all 
+make sure that all these acl should be entered above all 
 other acls otherwise they might not work.
 Now we only need to create users for authentication. 
 To create the password table, we need to execute the following command,
 
-$ sudo htpasswd -c /etc/squid/users_passwd squid
+$sudo htpasswd -c /etc/squid/users_passwd squid
 
 here ‘-c’ option is used to create the file & will not be used for adding other users,
 ‘squid’ is the name user. Now we need to restart the squid server to implement all the changes.
 
-$ sudo service squid restart
+$sudo service squid restart
 
 We can also use PAM, RADIUS or DIGEST for setting up squid authentication, 
-but for this tutorial it’s NCSA_AUTH, maybe in some future tutorials, we will discuss those.
-```
+but for this tutorial it’s NCSA_AUTH 
