@@ -39,7 +39,7 @@
             - redirection, 
             - header manipulation"
               - https://www.metahackers.pro/spoof-http-header-using-squid-proxy/
-              - https://www.metahackers.pro/spoof-http-header-using-squid-proxy
+              - https://www.cyberciti.biz/faq/squid-proxy-is-not-hiding-client-ip-address/
               - https://wiki.squid-cache.org/Features/Redirectors
               - https://www.powershelladmin.com/wiki/Linux_squid_proxy_url_rewriting_or_redirection
               - https://mindchasers.com/dev/app-squid-redirect
